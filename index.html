@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Access</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <div class="icon">🛡️</div>
+        <h1>Soap's Rēsh-1</h1>
+        <div class="subtitle">🔒 CLASSIFIED INFORMATION</div>
+
+        <div class="terminal">
+            <span class="prompt">&gt; FOUNDATION SECURE NETWORK</span>
+            <p id="terminal-text"></p>
+        </div>
+
+        <div class="public-box">
+            <p>Access information declassified for public viewing without authentication.</p>
+            <button class="outline-btn" onclick="publicAccess()">PUBLIC ACCESS</button>
+        </div>
+
+        <div class="divider">— OR AUTHENTICATE WITH SECURITY CLEARANCE —</div>
+
+        <label class="label">SECURITY CLEARANCE CODE</label>
+        <input type="password" id="codeInput" placeholder="Enter access code">
+
+        <button class="main-btn" onclick="authenticate()">AUTHENTICATE</button>
+
+        <div class="help">✉ Contact RAISA for password assistance</div>
+        <div class="level">[LEVEL 4 CLEARANCE REQUIRED]</div>
+        <div class="warning" id="status"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
